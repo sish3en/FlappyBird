@@ -99,7 +99,7 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
             }
         }
 
-        if (bird.getYPosition() > boardHeight) {
+        if (bird.getYPosition() >= boardHeight - bird.height) {
             throw new GameOverException("You fell!");
         }
 
